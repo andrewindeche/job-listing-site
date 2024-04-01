@@ -9,29 +9,8 @@
         />
         <button class="search-button" (click)="updateSearchResults()">Search</button>
       </div>
-     <div class="filter"> 
+    <div class="filter"> 
         <div> 
-        <label class="filter-label" for="location">Filter by Location:</label> 
-    <select class="filter-select" id="location">
-        [(ngModel)]="location" (change)="onLocationChange()">
-        <option value="all">All</option>
-        <option value="New York">New york</option>
-        <option value="Los Angeles">Los Angeles</option>
-        <option value="Texas">Texas</option>
-        <option value="Georgia">Georgia</option>
-    </select> 
-</div> 
-<div>
-    <label class="filter-label" for="type">Job Type:</label> 
-    <select class="filter-select" id="type"  [(ngModel)]="type" (change)="onTypeChange()"> 
-        <option value="all">All</option> 
-        <option value="full-time">Full-Time</option> 
-        <option value="part-time">Part-Time</option> 
-        <option value="contract">Contract</option> 
-        <option value="internship">Internship</option> 
-    </select>
-  </div>
-    <div> 
         <label class="filter-label" for="date">Sort by Date Posted:</label> 
         <select class="filter-select" id="date" [(ngModel)]="date" (change)="onDateChange()"> 
             <option value="true">All</option>
